@@ -1,0 +1,66 @@
+{
+  "name": "vue-plugin-boilerplate",
+  "version": "0.1.0",
+  "private": false,
+  "description": "An infrastructure of vue plugin with documentation tools",
+  "author": "Javad Ebrahimi",
+  "scripts": {
+    "serve": "vuepress dev docs",
+    "build": "npm run export:common & npm run export:umd",
+    "docs:build": "vuepress build docs",
+    "lint": "vue-cli-service lint",
+    "export:common": "vue-cli-service build --target lib src/lib.js --mode production",
+    "export:umd": "vue-cli-service build --target lib src/lib.js --mode production"
+  },
+  "main": "lib/vue-plugin-boilerplate.umd.min.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.3",
+    "sass-loader": "^10.2.1",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.8.2"
+  },
+  "peerDependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "browserslist": [
+    "cover 99.5%",
+    "not IE < 9"
+  ],
+  "homepage": "",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin",
+    "boilerplate",
+    "infrastructure",
+    "vue plugin",
+    "vue plugin boilerplate",
+    "vue plugin infrastructure",
+    "custom plugin",
+    "plugin infrastructure",
+    "plugin documentation",
+    "docs",
+    "plugin docs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
